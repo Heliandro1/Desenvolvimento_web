@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este videos está hospedado no meu próprio servidor</p>
+    <video width="500px" poster="imagens/espaco.jpg" controls>
+        <source src="midia/NF_-_Let_You_Down(240p).mkv" type="video/mkv">
+        <source src="midia/NF_-_Let_You_Down(240p).mp4" type="video/mp4">
+        <source src="midia/NF_-_Let_You_Down(240p).wmv" type="video/wmv">
+        <p>O seu navegador não suporta o video <a href="midia/NF_-_Let_You_Down(240p).mp4" download="midia/NF_-_Let_You_Down(240p).mp4">Clique aqui para baixar o arquivo .MP4</a></p>
+    </video>
+
+    <h1>Inserindo videos do YouTube</h1>
+     <iframe width = "560" height = "315" src="https://www.youtube.com/embed/eF9Qoc6p_4Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
