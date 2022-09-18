@@ -14,7 +14,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
-
+            position: relative;
         }
 
         td, th{
@@ -23,12 +23,31 @@
             
         }
 
+        caption{
+            font-size: 1.5em;
+            padding: 10px;
+            background-color: lightgray;
+            font-weight: bold;
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: white;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
         thead, tfoot{
             background-color: gray;
             color: white;
         }
         td.num{
-            
+            text-align: right;
         }
     </style>
 </head>
@@ -37,6 +56,7 @@
     <!-- 
         Anatomia para tabelas grandes
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -45,10 +65,11 @@
                 TR, TD, TH
      -->
      <table>
+         <caption>População das unidades federativas</caption>
          <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
 
             </tr>
          </thead>
@@ -166,10 +187,15 @@
 
          <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td><strong>210.147.125</strong></td>
             </tr>
          </tfoot>
      </table>
+     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque odit placeat recusandae dolor facilis delectus accusamus quam aliquid tempora quae eveniet eum aut accusantium inventore, non enim distinctio veritatis magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta similique nihil repudiandae explicabo distinctio! Voluptatem quo fugiat, qui non nam similique inventore placeat magnam expedita quos quidem vero corporis minima? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, dolor a, tempora incidunt vero doloribus reiciendis vel corrupti quia distinctio quos perferendis, pariatur doloremque et aspernatur voluptates cumque praesentium odio?</p>
+     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque odit placeat recusandae dolor facilis delectus accusamus quam aliquid tempora quae eveniet eum aut accusantium inventore, non enim distinctio veritatis magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta similique nihil repudiandae explicabo distinctio! Voluptatem quo fugiat, qui non nam similique inventore placeat magnam expedita quos quidem vero corporis minima? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, dolor a, tempora incidunt vero doloribus reiciendis vel corrupti quia distinctio quos perferendis, pariatur doloremque et aspernatur voluptates cumque praesentium odio?</p>
+     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque odit placeat recusandae dolor facilis delectus accusamus quam aliquid tempora quae eveniet eum aut accusantium inventore, non enim distinctio veritatis magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta similique nihil repudiandae explicabo distinctio! Voluptatem quo fugiat, qui non nam similique inventore placeat magnam expedita quos quidem vero corporis minima? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, dolor a, tempora incidunt vero doloribus reiciendis vel corrupti quia distinctio quos perferendis, pariatur doloremque et aspernatur voluptates cumque praesentium odio?</p>
+     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque odit placeat recusandae dolor facilis delectus accusamus quam aliquid tempora quae eveniet eum aut accusantium inventore, non enim distinctio veritatis magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta similique nihil repudiandae explicabo distinctio! Voluptatem quo fugiat, qui non nam similique inventore placeat magnam expedita quos quidem vero corporis minima? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, dolor a, tempora incidunt vero doloribus reiciendis vel corrupti quia distinctio quos perferendis, pariatur doloremque et aspernatur voluptates cumque praesentium odio?</p>
+     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque odit placeat recusandae dolor facilis delectus accusamus quam aliquid tempora quae eveniet eum aut accusantium inventore, non enim distinctio veritatis magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta similique nihil repudiandae explicabo distinctio! Voluptatem quo fugiat, qui non nam similique inventore placeat magnam expedita quos quidem vero corporis minima? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, dolor a, tempora incidunt vero doloribus reiciendis vel corrupti quia distinctio quos perferendis, pariatur doloremque et aspernatur voluptates cumque praesentium odio?</p>
 </body>
 </html>
