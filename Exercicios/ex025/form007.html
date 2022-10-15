@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <form action="" method="post">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <optgroup label="Norte">
+                    <option value="SP" selected>São Paulo</option>
+                    <option value="MG">Minas-Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="ipro">Profissão</label>
+            <input type="tel" name="prof" id="iprof" list="lstp">
+            <datalist id="lstp">
+                <option value="ADM">Administrador</option>
+                <option value="ct">Contablista</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem</label><br>
+            <textarea name="mens" id="imgs" cols="30" rows="10" placeholder="Sua Mensagem"></textarea>
+        </p>
+        <p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </p>
+    </form>
+</body>
+</html>
